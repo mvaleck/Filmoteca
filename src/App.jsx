@@ -1,5 +1,7 @@
 import GlobalStyle from "./style/globalStyle"
-import Menu from "./components"
+import Menu from "./components/Menu"
+import Filmes from "./components/Filmes"
+
 
 function App() {
 
@@ -7,6 +9,7 @@ function App() {
    <div>
     <GlobalStyle/>
     <Menu/>
+    <Filmes/>
     
    </div>
   )

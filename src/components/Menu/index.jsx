@@ -1,5 +1,5 @@
-import popcorn from "./../assets/popcorn.svg"
-import search from "./../assets/search.svg"
+import popcorn from "../../assets/popcorn.svg"
+import search from "../../assets/search.svg"
 
 import {Content, Logo, Categories, ButtonCateg, SearchBar} from "./style.js"
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakpoints } from "./../style/breakpoints"
+import { breakpoints } from "../../style/breakpoints"
 // @media (max-width: ${breakpoints.tablet}) {}
 
 export const Logo = styled.div `
