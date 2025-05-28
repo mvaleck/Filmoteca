@@ -1,11 +1,13 @@
 import GlobalStyle from "./style/globalStyle"
+import Menu from "./components"
 
 function App() {
 
   return (
    <div>
     <GlobalStyle/>
-    <h1>oi</h1>
+    <Menu/>
+    
    </div>
   )
 }
