@@ -1,32 +1,81 @@
 import Card from "../../components/Card"
-import img1 from "../../assets/popcorn.svg"
+import {CardFilmStyle} from "../Card/style"
+
+import howtolose from "../../assets/filmes/howtolose.jpg"
+import familia from "../../assets/filmes/familia.jpg"
+import entrefacas from "../../assets/filmes/entrefacas.jpg"
+import corra from "../../assets/filmes/corra.jpeg"
+import interestelar from "../../assets/filmes/interestelar.jpg"
+import branquelas from "../../assets/filmes/branquelas.avif"
+import esposa from "../../assets/filmes/esposa.jpg"
+
+
 const filmes =[
     {
-        img: img1,
+        img: howtolose,
         title: "Como perder um homem em 10 dias",
         ano: 2003,
-        categoria: "Romance" ,
-        descricao: "lalalala",
-        rating: 4.5
+        categoria: "Romance",
+        descricao: "Uma jornalista e um publicitário entram em um jogo de manipulação amorosa.",
+        rating: 5
     },
     {
-        img: img1,
-        title: "Entre Facas e Segredos",
-        ano: 2018,
-        categoria: "Ação" ,
-        descricao: "lalalala",
+        img: familia,
+        title: "Família do Bagulho	",
+        ano: 2013,
+        categoria: "Comédia" ,
+        descricao: "Uma jornalista e um publicitário entram em um jogo de manipulação amorosa.",
         rating: 2.5
-
+    },
+    {
+        img: entrefacas,
+        title: "Entre Facas e Segredos",
+        ano: 2019,
+        categoria: "Ação" ,
+        descricao: "Um detetive investiga a morte de um famoso escritor, em meio a uma família cheia de segredos.",
+        rating: 2.5
+    },
+    {
+        img: corra,
+        title: "Corra!",
+        ano: 2017,
+        categoria: "Terror" ,
+        descricao: "Jovem negro visita a família da namorada e descobre segredos perturbadores.",
+        rating: 2.5
+    },
+    {
+        img: interestelar,
+        title: "Interestelar",
+        ano: 2014,
+        categoria: "Ficção" ,
+        descricao: "Astronautas viajam por um buraco de minhoca em busca de um novo lar para a humanidade.",
+        rating: 2.5
+    },
+    {
+        img: branquelas,
+        title: "As Branquelas",
+        ano: 2004,
+        categoria: "Comédia" ,
+        descricao: "Dois agentes do FBI se disfarçam de socialites brancas em uma missão maluca.",
+        rating: 2.5
+    },
+    {
+        img: esposa,
+        title: "Esposa de Mentirinha",
+        ano: 2011,
+        categoria: "Romance" ,
+        descricao: "Um cirurgião pede à assistente que finja ser sua ex-esposa para impressionar a nova namorada.",
+        rating: 2.5
     }
 ]
 
 function Filmes() {
     return (
-        <div>
+        <CardFilmStyle>
             {filmes.map((filme, index) => (
                 <Card key={index} card={filme}/>
             ))}
-        </div>
+        </CardFilmStyle>
     );
     
 }
