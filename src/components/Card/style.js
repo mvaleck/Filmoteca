@@ -1,17 +1,28 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div `
-    width: 350px;
-    background-color: aqua;
+    width: 300px;
+   
+    // background-color: aqua;
 `;
+
+export const Page = styled.div `
+    padding: 10px 30px 10px;
+`;
+
 
 export const Img = styled.img `
     width: 100%;
+    border-radius: 15px;
+    height: 210px;     // define a altura desejada
+    object-fit: cover;
 `;
 export const DisplayInfos = styled.div `
     display: flex;
     gap: 10px;
+    color: grey;
     padding: 5px;
+    font-size: 12px;
 `;
 export const TitleFilm = styled.div `
     display: flex;

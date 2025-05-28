@@ -8,11 +8,11 @@ function StarRating ({rating}) {
 
     for (let i = 1; i <= 5; i++) {
         if (rating >= i) {
-            stars.push( <img key={1} src={full}></img>)
+            stars.push( <img key={i} src={full}></img>)
         } else if (rating >= i - 0.5) {
-            stars.push( <img key={1} src={half}></img>)
+            stars.push( <img key={i} src={half}></img>)
         } else {
-            stars.push(<img key={1} src={none}></img>)
+            stars.push(<img key={i} src={none}></img>)
         }
     }
 
