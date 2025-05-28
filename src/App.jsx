@@ -1,7 +1,7 @@
 import GlobalStyle from "./style/globalStyle"
 import Menu from "./components/Menu"
 import Filmes from "./components/Filmes"
-
+import Form from "./components/Form"
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
     <GlobalStyle/>
     <Menu/>
     <Filmes/>
+    <Form/>
     
    </div>
   )

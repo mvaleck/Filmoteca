@@ -45,8 +45,3 @@ export const Button = styled.button `
 export const Description = styled.p `
     padding: 5px;
 `;
-//
-//export const Img = styled.div ``;
-//export const Img = styled.div ``;
-//export const Img = styled.div ``;
-//export const Img = styled.div ``;
