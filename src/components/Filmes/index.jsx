@@ -83,7 +83,7 @@ const filmes =[
         ano: 555,
         categoria: "",
         descricao: "",
-        rating: 3
+        rating: 2.5
     }
 ]
 
