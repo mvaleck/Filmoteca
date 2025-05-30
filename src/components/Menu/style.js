@@ -4,6 +4,7 @@ import { breakpoints } from "../../style/breakpoints"
 
 export const Logo = styled.div `
     display: flex;
+    gap: 5px;
 
     @media (max-width: ${breakpoints.tablet}) {
         justify-content: center;
@@ -43,6 +44,12 @@ export const ButtonCateg = styled.button `
         color: white;
        
     }
+
+    &.ativo {
+    background-color:rgb(248, 230, 66); /* mesma cor do hover */
+    font-weight: bold;
+    
+  }
 
     @media (max-width: ${breakpoints.tablet}) {
         font-size: 10px;

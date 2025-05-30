@@ -20,7 +20,7 @@ function Card ({card}) {
             <DisplayInfos>
                 <p>{card.ano}</p>
                 <p>{card.categoria}</p>
-                <p>{card.subCategoria}</p>
+                <p>{card.subcategoria}</p>
             </DisplayInfos>
 
             <Description>{card.descricao}</Description>
