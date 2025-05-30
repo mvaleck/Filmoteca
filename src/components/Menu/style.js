@@ -4,6 +4,7 @@ import { breakpoints } from "../../style/breakpoints"
 
 export const Logo = styled.div `
     display: flex;
+    gap: 5px;
 
     @media (max-width: ${breakpoints.tablet}) {
         justify-content: center;

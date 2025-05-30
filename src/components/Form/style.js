@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Page = styled.div `
-    background-color: red;
+  
     padding: 5px;
     margin-bottom: 150px; //tirar
+    margin-top: 55px;
 `;
 
 export const FormStyle = styled.form `
@@ -13,7 +14,7 @@ export const FormStyle = styled.form `
    justify-content: center;
    margin: 0 auto;
    align-items: center;
-   background-color: aliceblue;
+   
 
    h2 {
     margin-bottom: 15px;
