@@ -1,9 +1,9 @@
 import popcorn from "../../assets/popcorn.svg"
 import search from "../../assets/search.svg"
-
 import {Content, Logo, Categories, ButtonCateg, SearchBar} from "./style.js"
 
-function Menu () {
+function Menu ({setCategoriaAtiva, categoriaAtiva, buscarTodos, buscarRomance, buscarAcao, buscarComedia, buscarTerror, buscarFiccao}) {
+
     return (
         <>
         <Content>
@@ -13,12 +13,44 @@ function Menu () {
             </Logo>
 
             <Categories>
-                <ButtonCateg>Todos</ButtonCateg>
-                <ButtonCateg>Romance</ButtonCateg>
-                <ButtonCateg>Ação</ButtonCateg>
-                <ButtonCateg>Comédia</ButtonCateg>
-                <ButtonCateg>Terror</ButtonCateg>
-                <ButtonCateg>Fiçção</ButtonCateg>
+                <ButtonCateg onClick={() => {
+                    buscarTodos();
+                    setCategoriaAtiva('todos');
+                }}
+                className={categoriaAtiva === 'todos' ? 'ativo' : ''}
+                >Todos</ButtonCateg>
+
+                <ButtonCateg  onClick={() => {
+                    buscarRomance();
+                    setCategoriaAtiva('romance');
+                }}
+                className={categoriaAtiva === 'romance' ? 'ativo' : ''}
+                >Romance</ButtonCateg>
+
+                <ButtonCateg onClick={() => {
+                    buscarAcao();
+                    setCategoriaAtiva('ação');
+                }}
+                className={categoriaAtiva === 'ação' ? 'ativo' : ''}
+                >Ação</ButtonCateg>
+
+                <ButtonCateg onClick={() => {
+                    buscarComedia();
+                    setCategoriaAtiva('comédia');
+                }}
+                className={categoriaAtiva === 'comédia' ? 'ativo' : ''} >Comédia</ButtonCateg>
+                
+                <ButtonCateg onClick={() => {
+                    buscarTerror();
+                    setCategoriaAtiva('terror');
+                }}
+                className={categoriaAtiva === 'terror' ? 'ativo' : ''}>Terror</ButtonCateg>
+
+                <ButtonCateg onClick={() => {
+                    buscarFiccao();
+                    setCategoriaAtiva('ficção');
+                }}
+                className={categoriaAtiva === 'ficção' ? 'ativo' : ''}>Fiçção</ButtonCateg>
             </Categories>
         </Content>
 

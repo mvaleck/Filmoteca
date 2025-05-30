@@ -45,6 +45,12 @@ export const ButtonCateg = styled.button `
        
     }
 
+    &.ativo {
+    background-color:rgb(248, 230, 66); /* mesma cor do hover */
+    font-weight: bold;
+    
+  }
+
     @media (max-width: ${breakpoints.tablet}) {
         font-size: 10px;
     };
